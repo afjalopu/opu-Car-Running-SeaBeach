@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pexels-asad-photo-maldives-457881.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: bottom;
+    position: relative;
+}
+.road
+{
+    height: 100px;
+    width: 500%;
+    background-image: url(roadside.png);
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 10s linear infinite;
+}
+@keyframes highway
+{
+   100%{
+       transform: translateX(-3400px);
+   }
+}
+.city
+{
+    height: 230px;
+    width: 500%;
+    background-image: url(citybackground.png);
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 80px;
+    background-repeat: repeat-x;
+    z-index: 1;
+    animation: city 7s linear infinite;
+}
+@keyframes city
+{
+   100%{
+       transform: translateX(-340px);
+   }
+}
+.car{
+     width: 400px;
+     left: 50%;
+     bottom: 50px;
+     transform: translateX(-50%);
+     position: absolute;
+     z-index: 1;
+}
+.car img
+{
+    width: 200px;
+    height: 100px;
+    animation: car 1s infinite linear;
+}
+@keyframes car
+{
+    100%{
+         transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px); 
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 1;
+}
+.wheel img
+{
+     width: 35px;
+     height: 35px;
+     border-radius: 60%;
+     border: 2px solid black;
+     animation: wheel 1s linear infinite ;
+
+}
+.backwheel{
+    left: -183px;
+    bottom: -111px;
+    position: absolute;
+}
+.frontwheel
+{
+    left: -60px;
+    bottom: -111px;
+    position: absolute;
+}
+@keyframes wheel
+{
+  100%
+  {
+      transform: rotate(360deg);
+  }
+}
